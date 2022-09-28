@@ -5,5 +5,13 @@
 .blog-container {
     width: 85%;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding-top: 4rem;
+}
+
+.blog-container > * {
+    padding: 1rem 0;
+}
+
+.blog-container summary {
+    color: blue;
 }
