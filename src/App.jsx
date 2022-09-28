@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 
 function App() {
   const [cards, setCards] = useState([]);
+  const [cardTotalTime, setCardTotalTime] = useState(0);
 
   useEffect(() => {
     fetch("db.json")
@@ -19,13 +20,18 @@ function App() {
         <Header />
         <p>Select Your Daily Activies</p>
         <div className="cards">
-          {console.log(cards)}
+          {console.log(cardTotalTime)}
           {cards?.map((card) => (
-            <Card key={card.id} data={card} />
+            <Card
+              key={card.id}
+              data={card}
+              cardTotalTime={cardTotalTime}
+              setCardTotalTime={setCardTotalTime}
+            />
           ))}
         </div>
       </div>
-      <Drawer />
+      <Drawer cardTotalTime={cardTotalTime} />
     </div>
   );
 }

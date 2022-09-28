@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import "./Card.css";
 
-const Card = ({ data }) => {
+const Card = ({ data, setCardTotalTime, cardTotalTime }) => {
   const [active, setActive] = useState(false);
+
+  const handleAddButton = () => {
+    setActive(true);
+    setCardTotalTime(cardTotalTime + data.time * 1);
+  };
+
   return (
     <div className="card">
       <img src={`img/${data.image}`} alt="" className="card__img" />
@@ -12,9 +18,7 @@ const Card = ({ data }) => {
       <p className="card__time">Time Required: ${data.time}s</p>
       <button
         className={active ? "card__btn active-card" : "card__btn"}
-        onClick={() => {
-          setActive(true);
-        }}
+        onClick={handleAddButton}
       >
         {active ? "Added" : "Add to list"}
       </button>
