@@ -42,3 +42,25 @@
     font-size: 1.2rem;
     background-color: var(--color-primary);
 }
+
+.showbox {
+    display: flex;
+    background-color: #ADC5CF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.showbox h3 {
+    font-size: 2rem;
+}
+
+.showbox p {
+    font-size: 1.5rem;
+}
+
+.active {
+    background-color: black;
+}

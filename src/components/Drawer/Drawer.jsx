@@ -3,9 +3,35 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import profilepic from "../../assets/profile.jfif";
 import "./Drawer.css";
 
+const ShowBox = ({ data, name }) => {
+  return (
+    <div className="showbox">
+      <h3 className="showbox__heading">{name}</h3>
+      <p className="showbox__count">{data} seconds</p>
+    </div>
+  );
+};
+
+const BreakButton = ({ activeBreak, time, setActiveBreak, id }) => {
+  const handleActiveButton = () => {
+    setActiveBreak(id);
+  };
+  return (
+    <button
+      className={
+        activeBreak === id ? "break-btn__btn active" : "break-btn__btn"
+      }
+      onClick={handleActiveButton}
+    >
+      {time}
+    </button>
+  );
+};
+
 const Drawer = () => {
   const [time, setTime] = useState(0);
   const [breakTime, setBreakTime] = useState(0);
+  const [activeBreak, setActiveBreak] = useState(false);
   return (
     <div className="drawer">
       <div className="profile">
@@ -19,21 +45,40 @@ const Drawer = () => {
       </div>
       <p>Add A Break</p>
       <div className="break-btn">
-        <button className="break-btn__btn">10s</button>
-        <button className="break-btn__btn">20s</button>
-        <button className="break-btn__btn">30s</button>
-        <button className="break-btn__btn">40s</button>
-        <button className="break-btn__btn">50s</button>
+        <BreakButton
+          id="1"
+          time="10s"
+          activeBreak={activeBreak}
+          setActiveBreak={setActiveBreak}
+        />
+        <BreakButton
+          id="2"
+          time="20s"
+          activeBreak={activeBreak}
+          setActiveBreak={setActiveBreak}
+        />
+        <BreakButton
+          id="3"
+          time="30s"
+          activeBreak={activeBreak}
+          setActiveBreak={setActiveBreak}
+        />
+        <BreakButton
+          id="4"
+          time="40s"
+          activeBreak={activeBreak}
+          setActiveBreak={setActiveBreak}
+        />
+        <BreakButton
+          id="5"
+          time="50s"
+          activeBreak={activeBreak}
+          setActiveBreak={setActiveBreak}
+        />
       </div>
       <p>Exercise Details</p>
-      <div className="time">
-        <h3 className="time__heading">Exercise time</h3>
-        <p className="time__count">{time} seconds</p>
-      </div>
-      <div className="break">
-        <h3 className="break__heading">Break time</h3>
-        <p className="break__count">{breakTime} seconds</p>
-      </div>
+      <ShowBox data={time} name="Exercise time" />
+      <ShowBox data={breakTime} name="Break time" />
     </div>
   );
 };
