@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import profilepic from "../../assets/profile.jfif";
 import "./Drawer.css";
@@ -12,9 +12,18 @@ const ShowBox = ({ data, name }) => {
   );
 };
 
-const BreakButton = ({ activeBreak, time, setActiveBreak, id }) => {
+const BreakButton = ({
+  activeBreak,
+  time,
+  setActiveBreak,
+  id,
+  setBreakTime,
+}) => {
   const handleActiveButton = () => {
     setActiveBreak(id);
+    setBreakTime(time);
+    localStorage.setItem("activeBreakID", id);
+    localStorage.setItem("breakTime", time);
   };
   return (
     <button
@@ -30,8 +39,17 @@ const BreakButton = ({ activeBreak, time, setActiveBreak, id }) => {
 
 const Drawer = () => {
   const [time, setTime] = useState(0);
-  const [breakTime, setBreakTime] = useState(0);
-  const [activeBreak, setActiveBreak] = useState(false);
+  const [breakTime, setBreakTime] = useState();
+  const [activeBreak, setActiveBreak] = useState();
+
+  useEffect(() => {
+    if (localStorage.getItem("activeBreakID")) {
+      const id = localStorage.getItem("activeBreakID");
+      const time = localStorage.getItem("breakTime");
+      setActiveBreak(id);
+      setBreakTime(time);
+    }
+  });
   return (
     <div className="drawer">
       <div className="profile">
@@ -47,32 +65,37 @@ const Drawer = () => {
       <div className="break-btn">
         <BreakButton
           id="1"
-          time="10s"
+          time="10"
           activeBreak={activeBreak}
+          setBreakTime={setBreakTime}
           setActiveBreak={setActiveBreak}
         />
         <BreakButton
           id="2"
-          time="20s"
+          time="20"
           activeBreak={activeBreak}
+          setBreakTime={setBreakTime}
           setActiveBreak={setActiveBreak}
         />
         <BreakButton
           id="3"
-          time="30s"
+          time="30"
           activeBreak={activeBreak}
+          setBreakTime={setBreakTime}
           setActiveBreak={setActiveBreak}
         />
         <BreakButton
           id="4"
-          time="40s"
+          time="40"
           activeBreak={activeBreak}
+          setBreakTime={setBreakTime}
           setActiveBreak={setActiveBreak}
         />
         <BreakButton
           id="5"
-          time="50s"
+          time="50"
           activeBreak={activeBreak}
+          setBreakTime={setBreakTime}
           setActiveBreak={setActiveBreak}
         />
       </div>
