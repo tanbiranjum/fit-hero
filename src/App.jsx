@@ -18,7 +18,7 @@ function App() {
     <div className="app">
       <div className="container">
         <Header />
-        <p>Select Your Daily Activies</p>
+        <p className="container__heading">Select Your Daily Activies</p>
         <div className="cards">
           {cards?.map((card) => (
             <Card

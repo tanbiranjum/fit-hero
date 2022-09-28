@@ -2,7 +2,7 @@
     {
         "id": "1001",
         "name": "Dumble",
-        "time": "30",
+        "time": "10",
         "age": "20-25",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (1).jpg"
@@ -10,7 +10,7 @@
     {
         "id": "1002",
         "name": "Push up",
-        "time": "30",
+        "time": "40",
         "age": "40-45",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (2).jpg"
@@ -18,7 +18,7 @@
     {
         "id": "1003",
         "name": "Flank",
-        "time": "30",
+        "time": "50",
         "age": "30-35",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (3).jpg"
@@ -26,7 +26,7 @@
     {
         "id": "1004",
         "name": "Running",
-        "time": "30",
+        "time": "60",
         "age": "20-25",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (4).jpg"
@@ -34,15 +34,15 @@
     {
         "id": "1005",
         "name": "dumble",
-        "time": "30",
+        "time": "50",
         "age": "40-45",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (5).jpg"
     },
     {
         "id": "1006",
-        "name": "dumble",
-        "time": "30",
+        "name": "Dummble",
+        "time": "800",
         "age": "50-55",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (6).jpg"
