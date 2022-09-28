@@ -8,8 +8,12 @@ const Blog = () => {
         <details>
           <summary>How react works?</summary>
           <p>
-            HTML (HyperText Markup Language) is the most basic building block of
-            the Web. It defines the meaning and structure of web content.
+            React implements a virtual DOM, which is essentially a JavaScript
+            representation of the DOM tree. Therefore, it will use a virtual
+            version of the DOM whenever it wants to read from or write to it.
+            The virtual DOM will then look for the most effective approach to
+            update the DOM of the browser. React DOM takes care of updating the
+            DOM to match the React elements. 
           </p>
         </details>
         <details>
