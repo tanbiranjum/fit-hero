@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Card from "./components/Card/Card";
 import Drawer from "./components/Drawer/Drawer";
 import Header from "./components/Header/Header";
 
@@ -18,9 +19,10 @@ function App() {
         <Header />
         <p>Select Your Daily Activies</p>
         <div className="cards">
-          {cards?.map((card) => {
-            console.log(card);
-          })}
+          {console.log(cards)}
+          {cards?.map((card) => (
+            <Card key={card.id} data={card} />
+          ))}
         </div>
       </div>
       <Drawer />
