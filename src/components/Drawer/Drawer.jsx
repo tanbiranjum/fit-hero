@@ -102,6 +102,7 @@ const Drawer = () => {
       <p>Exercise Details</p>
       <ShowBox data={time} name="Exercise time" />
       <ShowBox data={breakTime} name="Break time" />
+      <button className="activity-btn">Activity Completed</button>
     </div>
   );
 };

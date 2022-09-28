@@ -64,3 +64,15 @@
 .active {
     background-color: black;
 }
+
+.activity-btn {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-size: 2rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
