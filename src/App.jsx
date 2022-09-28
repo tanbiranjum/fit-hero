@@ -20,7 +20,6 @@ function App() {
         <Header />
         <p>Select Your Daily Activies</p>
         <div className="cards">
-          {console.log(cardTotalTime)}
           {cards?.map((card) => (
             <Card
               key={card.id}

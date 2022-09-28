@@ -37,8 +37,7 @@ const BreakButton = ({
   );
 };
 
-const Drawer = () => {
-  const [time, setTime] = useState(0);
+const Drawer = ({ cardTotalTime }) => {
   const [breakTime, setBreakTime] = useState();
   const [activeBreak, setActiveBreak] = useState();
 
@@ -100,7 +99,7 @@ const Drawer = () => {
         />
       </div>
       <p>Exercise Details</p>
-      <ShowBox data={time} name="Exercise time" />
+      <ShowBox data={cardTotalTime} name="Exercise time" />
       <ShowBox data={breakTime} name="Break time" />
       <button className="activity-btn">Activity Completed</button>
     </div>
