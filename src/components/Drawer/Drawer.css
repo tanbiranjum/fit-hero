@@ -1,6 +1,11 @@
 .drawer {
     background-color: #ffffff;
-    padding: 16px;
+    padding: 32px 16px 16px 16px;
+}
+
+.drawer p {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .profile {
@@ -25,12 +30,25 @@
     font-size: 1rem;
 }
 
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    background-color: #ADC5CF;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 700;
+    margin: 2rem 0 4rem 0;
+}
+
 .break-btn {
     padding: 16px 8px;
     background-color: #ADC5CF;
     display: flex;
     justify-content: space-around;
     border-radius: 8px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
 
 .break-btn__btn {
@@ -50,7 +68,7 @@
     justify-content: space-between;
     padding: 1.6rem;
     border-radius: 8px;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .showbox h3 {
@@ -69,7 +87,7 @@
     background-color: var(--color-primary);
     padding: 1rem;
     border-radius: 8px;
-    margin: 1rem 0;
+    margin-top: 4rem;
     font-size: 2rem;
     width: 100%;
     border: none;

@@ -4,6 +4,7 @@
         "name": "Dumble",
         "time": "30",
         "age": "20-25",
+        "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (1).jpg"
     },
     {
@@ -11,6 +12,7 @@
         "name": "Push up",
         "time": "30",
         "age": "40-45",
+        "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (2).jpg"
     },
     {
@@ -18,6 +20,7 @@
         "name": "Flank",
         "time": "30",
         "age": "30-35",
+        "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (3).jpg"
     },
     {
@@ -25,6 +28,7 @@
         "name": "Running",
         "time": "30",
         "age": "20-25",
+        "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (4).jpg"
     },
     {
@@ -32,6 +36,7 @@
         "name": "dumble",
         "time": "30",
         "age": "40-45",
+        "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (5).jpg"
     },
     {
@@ -39,6 +44,7 @@
         "name": "dumble",
         "time": "30",
         "age": "50-55",
+        "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (6).jpg"
     }
 ]

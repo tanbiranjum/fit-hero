@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import profilepic from "../../assets/profile.jfif";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./Drawer.css";
 
 const ShowBox = ({ data, name }) => {
@@ -60,6 +62,11 @@ const Drawer = ({ cardTotalTime }) => {
           </p>
         </div>
       </div>
+      <div className="info">
+        <p>90kg</p>
+        <p>5.8 Height</p>
+        <p>24Yrs</p>
+      </div>
       <p>Add A Break</p>
       <div className="break-btn">
         <BreakButton
@@ -101,7 +108,15 @@ const Drawer = ({ cardTotalTime }) => {
       <p>Exercise Details</p>
       <ShowBox data={cardTotalTime} name="Exercise time" />
       <ShowBox data={breakTime} name="Break time" />
-      <button className="activity-btn">Activity Completed</button>
+      <button
+        className="activity-btn"
+        onClick={() => {
+          toast("Wow! Your activity is completed!");
+        }}
+      >
+        Activity Completed
+      </button>
+      <ToastContainer style={{ fontSize: "2rem" }} position={"top-center"} />
     </div>
   );
 };
