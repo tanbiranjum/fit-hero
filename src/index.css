@@ -1,3 +1,9 @@
+:root {
+  --color-primary: #0073CE;
+  --color-secondary: #0082C8;
+  --color-tartiary: #008CB3;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -11,6 +17,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', sans-serif;
 }
 img, picture, video, canvas, svg {
   display: block;

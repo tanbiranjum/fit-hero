@@ -4,5 +4,11 @@
 }
 
 .container {
-  padding-top: 5rem;
+  padding: 6rem 5rem 0 12rem;
+}
+
+.container p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-top: 2rem;
 }

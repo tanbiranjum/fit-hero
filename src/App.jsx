@@ -4,18 +4,24 @@ import Drawer from "./components/Drawer/Drawer";
 import Header from "./components/Header/Header";
 
 function App() {
-  const [card, cards] = useState([]);
+  const [cards, setCards] = useState([]);
 
   useEffect(() => {
     fetch("db.json")
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setCards(data));
   }, []);
 
   return (
     <div className="app">
       <div className="container">
         <Header />
+        <p>Select Your Daily Activies</p>
+        <div className="cards">
+          {cards?.map((card) => {
+            console.log(card);
+          })}
+        </div>
       </div>
       <Drawer />
     </div>
