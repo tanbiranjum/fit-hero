@@ -1,0 +1,9 @@
+.blog {
+    font-size: 2rem;
+}
+
+.blog-container {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
