@@ -17,17 +17,22 @@ const Blog = () => {
           </p>
         </details>
         <details>
-          <summary>What is CSS?</summary>
+          <summary>Difference between props and state?</summary>
           <p>
-            Cascading Style Sheets (CSS) is a stylesheet language used to
-            describe the presentation of a document written in HTML.
+            State is the component's local state, which is protected from access
+            outside of the component and cannot be changed. It is the functional
+            equivalent of local variables. Contrarily, props enable components
+            to accept data from their parent component in the form of props,
+            making them reusable.
           </p>
         </details>
         <details>
-          <summary>What is JavaScript?</summary>
+          <summary>Usage of useEffect expect load data from api?</summary>
           <p>
-            JavaScript (JS) is a lightweight, interpreted, or just-in-time
-            compiled programming language with first-class functions.
+            useEffect runs on when a state is changed! So it can be use for do
+            something based on changes in state. It can also use for load data
+            from local storage or do something after the components mounts. It
+            can also be used for filtering.
           </p>
         </details>
       </div>
