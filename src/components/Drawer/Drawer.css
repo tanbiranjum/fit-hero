@@ -1,0 +1,44 @@
+.drawer {
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile__img {
+    border-radius: 50%;
+    width: 6rem;
+}
+
+.profile-info h3 {
+    font-size: 2rem;
+}
+
+.profile-info p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1rem;
+}
+
+.break-btn {
+    padding: 16px 8px;
+    background-color: #ADC5CF;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+
+.break-btn__btn {
+    padding: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: var(--color-primary);
+}

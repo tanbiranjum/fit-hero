@@ -1,0 +1,20 @@
+.card {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.card__img {
+    border-radius: 8px;
+}
+
+.card__btn {
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: var(--color-tartiary);
+    border: none;
+    cursor: pointer;
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 4px;
+}

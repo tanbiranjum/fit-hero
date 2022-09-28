@@ -1,6 +1,7 @@
 .app {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  background-color: #ADC5CF;
 }
 
 .container {
@@ -16,5 +17,5 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 3rem;
 }
