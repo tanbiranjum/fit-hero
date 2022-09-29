@@ -1,7 +1,7 @@
 [
     {
         "id": "1001",
-        "name": "Dumble",
+        "name": "Crunches",
         "time": "10",
         "age": "20-25",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
@@ -9,7 +9,7 @@
     },
     {
         "id": "1002",
-        "name": "Push up",
+        "name": "Weight Lift",
         "time": "40",
         "age": "40-45",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
@@ -17,7 +17,7 @@
     },
     {
         "id": "1003",
-        "name": "Flank",
+        "name": "Chest Fly Machine",
         "time": "50",
         "age": "30-35",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
@@ -25,7 +25,7 @@
     },
     {
         "id": "1004",
-        "name": "Running",
+        "name": "80Kg Weight Lift",
         "time": "60",
         "age": "20-25",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
@@ -33,7 +33,7 @@
     },
     {
         "id": "1005",
-        "name": "dumble",
+        "name": "200Kg Weight Lift",
         "time": "50",
         "age": "40-45",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
@@ -41,8 +41,8 @@
     },
     {
         "id": "1006",
-        "name": "Dummble",
-        "time": "800",
+        "name": "Running",
+        "time": "80",
         "age": "50-55",
         "description": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
         "image": "image (6).jpg"
