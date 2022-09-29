@@ -12,6 +12,7 @@
 .card__name {
     padding-top: 8px;
     font-size: 2rem;
+    color: var(--color-primary);
 }
 
 .card__description {
@@ -20,10 +21,13 @@
 
 .card__age {
     padding-top: 8px;
+    color: #3EC70B;
 }
 
 .card__time {
+    font-size: 1.8rem !important;
     padding-bottom: 8px;
+    color: #3B44F6;
 }
 
 .card__age, .card__time {
